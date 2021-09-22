@@ -7,17 +7,17 @@ There are 4 main files in the source folder. mesh.py contains code for mesh data
 ## Info:
 The mesh processing program implements a mesh data structure for certain tasks e.g. mesh simplification. The mesh.py contains the mesh data structure as described below:
 
-# Mesh:
+### Mesh:
 The mesh is composed of vertices, edges and faces. Each face has 3 vertices and 3 edges. The mesh data structure consists of a list of vertices, edges and faces that make up the entire mesh. In addition the mesh data structure contains attricutes and functions to perform certain operations such as reading an input mesh, adding a vertex, edge or face to the mesh, building mesh connectivity, building normals data of the mesh, extracting pathces and features of the mesh, simplification and smoothing of the mesh.
 
-# Connectivity:
+## Connectivity:
 Each building block of the mesh i.e. vertex, edge, face is connected to other building blocks in order to define the geometry of the mesh. Following is the description of the data structure for these building blocks:
 
-# Vertex:
+### Vertex:
 A vertex consists of three geometric coordinates (x,y,z) which define its position in space. In addition, a vertex also has a list of neighboring vertices, edges and faces.
 
-# Edge:
+### Edge:
 An edge consists of two vertices that are connected to each other to build mesh faces. In addition, an edge also has a list of neighboring vertices, edges and faces.
 
-# Face:
+### Face:
 An face consists of three vertices and three edges to define its shape. In addition, a face also has a list of neighboring vertices, edges and faces.
