@@ -1,5 +1,5 @@
 # Triangular_Mesh_Processing
-A Python Implementation for Triangular Surface Mesh Processing 
+A Python Implementation for Triangular Surface Mesh Processing. Mesh Coarsening is applied on the input triangle mesh via the cost minimization of an objective function that takes into account the energy of vertices to rank edges for decimation.
 
 ## Usage:
 There are 4 main files in the source folder. mesh.py contains code for mesh data structure, simplification and smoothing. mesh_io.py, pqueue.py and mesh_quality.py contain implementations for minor stuff. The program can be run by navigating to the directory containing input mesh file used for the program (e.g. h0c3_mesh.vtp) The input mesh must be a triangular mesh. 
@@ -21,3 +21,7 @@ An edge consists of two vertices that are connected to each other to build mesh 
 
 ### Face:
 An face consists of three vertices and three edges to define its shape. In addition, a face also has a list of neighboring vertices, edges and faces.
+
+# Results
+![alt text](https://github.com/naeem014/Triangular_Mesh_Processing/blob/main/media/tri_result.png)
+
